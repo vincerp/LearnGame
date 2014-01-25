@@ -4,11 +4,92 @@ ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Circle
+    100004: ControlBone
+    100006: Elbow_L
+    100008: Elbow_R
+    100010: Foot_Def_L
+    100012: Foot_Def_R
+    100014: Foot_IK_L
+    100016: Foot_IK_R
+    100018: GameJam_Rig
+    100020: Hand_FK_L
+    100022: Hand_FK_R
+    100024: Hand_IK_L
+    100026: Hand_IK_R
+    100028: Head_Def
+    100030: Head_Def_Top
+    100032: Knee_L
+    100034: Knee_R
+    100036: LowerArm_Def_L
+    100038: LowerArm_Def_R
+    100040: LowerArm_IK_L
+    100042: LowerArm_IK_R
+    100044: LowerLeg_Def_L
+    100046: LowerLeg_Def_R
+    100048: LowerLeg_IK_L
+    100050: LowerLeg_IK_R
+    100052: MainChar
+    100054: Spine_Def
+    100056: UpperArm_Def_L
+    100058: UpperArm_Def_R
+    100060: UpperArm_IK_L
+    100062: UpperArm_IK_R
+    100064: UpperLeg_Def_L
+    100066: UpperLeg_Def_R
+    100068: UpperLeg_IK_L
+    100070: UpperLeg_IK_R
     400000: //RootNode
+    400002: Circle
+    400004: ControlBone
+    400006: Elbow_L
+    400008: Elbow_R
+    400010: Foot_Def_L
+    400012: Foot_Def_R
+    400014: Foot_IK_L
+    400016: Foot_IK_R
+    400018: GameJam_Rig
+    400020: Hand_FK_L
+    400022: Hand_FK_R
+    400024: Hand_IK_L
+    400026: Hand_IK_R
+    400028: Head_Def
+    400030: Head_Def_Top
+    400032: Knee_L
+    400034: Knee_R
+    400036: LowerArm_Def_L
+    400038: LowerArm_Def_R
+    400040: LowerArm_IK_L
+    400042: LowerArm_IK_R
+    400044: LowerLeg_Def_L
+    400046: LowerLeg_Def_R
+    400048: LowerLeg_IK_L
+    400050: LowerLeg_IK_R
+    400052: MainChar
+    400054: Spine_Def
+    400056: UpperArm_Def_L
+    400058: UpperArm_Def_R
+    400060: UpperArm_IK_L
+    400062: UpperArm_IK_R
+    400064: UpperLeg_Def_L
+    400066: UpperLeg_Def_R
+    400068: UpperLeg_IK_L
+    400070: UpperLeg_IK_R
     2300000: //RootNode
+    2300002: Circle
     3300000: //RootNode
+    3300002: Circle
     4300000: MainChar
+    7400000: Default Take
+    7400002: Dead
+    7400004: Idle
+    7400006: Jump
+    7400008: Talk1
+    7400010: Talk2
+    7400012: Walk
     9500000: //RootNode
+    11100000: //RootNode
+    13700000: MainChar
   materials:
     importMaterials: 1
     materialName: 0
@@ -17,7 +98,7 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     optimizeGameObjects: 0
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
@@ -59,6 +140,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 3
+  animationType: 1
   additionalBone: 0
   userData: 
