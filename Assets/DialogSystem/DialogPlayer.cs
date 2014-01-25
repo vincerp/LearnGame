@@ -47,6 +47,8 @@ public class DialogPlayer : MonoBehaviour {
 
 					foreach( Renderer renderer in renderers)
 						renderer.enabled = false;
+
+					(FindObjectOfType(typeof(NodeFollower)) as NodeFollower).MoveToNext();
 				}
 
 			}
