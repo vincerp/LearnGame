@@ -20,7 +20,7 @@ public class DialogTrigger : MonoBehaviour
 		if( other.gameObject.tag != "Player" )
 			return;
 
-		if (DialogPlayer.Instance.dialogToPlay != null )
+		if (DialogPlayer.Instance && DialogPlayer.Instance.dialogToPlay != null )
 			return;
 
 		if( playOnce && played)

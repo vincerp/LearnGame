@@ -333,7 +333,7 @@ function Update() {
 		} 
 		else 
 		{
-			if(controller.velocity.sqrMagnitude < 0.1) {
+			if(_characterState == CharacterState.Idle && !IsMoving) {
 				_animation.CrossFade(idleAnimation.name);
 			}
 			else 
@@ -346,12 +346,12 @@ function Update() {
 					_animation[walkAnimation.name].speed = Mathf.Clamp(controller.velocity.magnitude, 0.0, trotMaxAnimationSpeed);
 					_animation.CrossFade(walkAnimation.name);	
 				}
-				else if(_characterState == CharacterState.Walking) {
+				else if(_characterState == CharacterState.Walking || (_characterState == CharacterState.Idle && IsMoving)) {
 					_animation[walkAnimation.name].speed = Mathf.Clamp(controller.velocity.magnitude, 0.0, walkMaxAnimationSpeed);
 					_animation.CrossFade(walkAnimation.name);	
 				}
 				
-			}
+			} 
 		}
 	}
 	// ANIMATION sector
