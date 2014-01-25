@@ -52,17 +52,6 @@ public class EditorUtils {
 		
 	}
 	
-	[MenuItem("GameObject/Mirror X Position &s")]
-	public static void MirrorXPosition(){
-		Transform _selected = Selection.activeGameObject.transform;
-		Vector3 _lp = _selected.localPosition;
-		Vector3 _lr = _selected.localRotation.eulerAngles;
-		_selected.localPosition = new Vector3(-_lp.x, _lp.y, _lp.z);
-		_selected.localRotation = Quaternion.Euler(_lr.x, _lr.y, -_lr.z);
-		
-		if(showDebugLog)Debug.Log("Mirrored position for " + _selected.name);
-	}
-	
 	[MenuItem("GameObject/Reset Position %'")]
 	public static void ResetPosition(){
 		Transform _selected = Selection.activeGameObject.transform;
@@ -80,10 +69,41 @@ public class EditorUtils {
 		
 		if(showDebugLog)Debug.Log("Transform reseted for " + _selected.name);
 	}
+
+	[MenuItem("GameObject/Create Parent &f")]
+	public static void PutOnFloor(){
+		GameObject obj = Selection.activeGameObject;
+		RaycastHit hit;
+		
+		if(Physics.Raycast(obj.transform.position, Vector3.down, out hit)){
+			Vector3 poc = hit.point;
+			
+			if(obj.renderer != null){
+				poc += new Vector3(0f, obj.renderer.bounds.size.y/2f, 0f);
+			}
+			
+			obj.transform.position = poc;
+		}
+	}
 	#endregion
-	
+
+	[MenuItem("GameObject/Create Parent %#e")]
+	public static void RandomizeScale(){
+		Debug.Log("yeah");
+		Transform obj = Selection.activeGameObject.transform;
+
+		obj.localScale = new Vector3(Random.Range(0.25f, 1.5f), Random.Range(0.25f, 1.5f), Random.Range(0.25f, 1.5f));
+	}
+
+	[MenuItem("GameObject/Create Parent %#r")]
+	public static void RandomizeRotationY(){
+		Transform obj = Selection.activeGameObject.transform;
+		
+		obj.rotation = Quaternion.Euler(Vector3.up*Random.Range(0f, 360f));
+	}
+
 	#region Selection Menu
-	[MenuItem("Selection/Select Parent #v")]
+	[MenuItem("Selection/Select Parent")]
 	public static void SelectParent(){
 		Transform _selected = Selection.activeGameObject.transform;
 		if(_selected.parent == null) {
@@ -103,7 +123,7 @@ public class EditorUtils {
 		Selection.activeGameObject = _selected.GetChild(0).gameObject;
 	}
 	
-	[MenuItem("Selection/Select Next Sibling #%v")]
+	[MenuItem("Selection/Select Next Sibling")]
 	public static void SelectSibling(){
 		Transform _selected = Selection.activeGameObject.transform;
 		int max = _selected.parent.childCount;
