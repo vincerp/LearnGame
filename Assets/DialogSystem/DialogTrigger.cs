@@ -26,14 +26,7 @@ public class DialogTrigger : MonoBehaviour
 		if( playOnce && played)
 			return;
 
-		DialogPlayer.Instance.Play(dialog as Dialog);
-
-		if( cameraFocusOn != null )
-		{
-//			Camera.main.transform.LookAt(cameraFocusOn);
-
-			// maybe if there MouseOrbit, we could attach it too
-		}
+		DialogPlayer.Instance.Play(dialog, cameraFocusOn);
 
 		played = true;
 	}
