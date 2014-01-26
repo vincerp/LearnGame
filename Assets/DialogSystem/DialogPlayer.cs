@@ -21,10 +21,7 @@ public class DialogPlayer : MonoBehaviour {
 		mesh = GetComponentInChildren<TextMesh>();
 		Instance = this;
 
-		renderers = GetComponentsInChildren<MeshRenderer>();
-
-		foreach( Renderer renderer in renderers)
-			renderer.enabled = false;
+		transform.parent.camera.enabled = false;
 	}
 
 	void Update()
@@ -45,10 +42,9 @@ public class DialogPlayer : MonoBehaviour {
 					dialogToPlay = null;
 					messageIndex = 0;
 
-					foreach( Renderer renderer in renderers)
-						renderer.enabled = false;
+					transform.parent.camera.enabled = false;
 
-					(FindObjectOfType(typeof(NodeFollower)) as NodeFollower).MoveToNext();
+					GameObject.FindWithTag("TourGuide").GetComponent<NodeFollower>().MoveToNext();
 				}
 
 			}
@@ -59,8 +55,7 @@ public class DialogPlayer : MonoBehaviour {
 	{
 		dialogToPlay = dialog;
 
-		foreach( Renderer renderer in renderers)
-			renderer.enabled = true;
+		transform.parent.camera.enabled = true;
 
 		if( dialog.messages.Count > 0 )
 			ShowMessage( dialog.messages[messageIndex] );
@@ -70,5 +65,9 @@ public class DialogPlayer : MonoBehaviour {
 	{
 		mesh.text = message.speaker + ": \n\n" + message.message;
 		messageIndex++;
+
+		// rooting to "Tour Guide" object
+		int random = Random.Range(1,3);
+		transform.parent.parent.parent.animation.Play("Talk" + random);
 	}
 }
