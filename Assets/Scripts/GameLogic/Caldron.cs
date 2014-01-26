@@ -17,6 +17,8 @@ public class Caldron : MonoBehaviour {
 	public AudioClip hamSound;
 	public float hamForce = 200f;
 
+	public GameObject dino;
+
 	void OnTriggerStay (Collider col) {
 		if(col.tag != "Player") return;
 
@@ -30,6 +32,8 @@ public class Caldron : MonoBehaviour {
 		if(eggsPulled>= eggsTotal){
 			Instantiate(smoke, transform.position+moveTo, Quaternion.identity);
 			AudioMono.instance.PlayOneShot(hamSound);
+
+			dino.SetActive(true);
 
 			GameObject h = Instantiate(ham, transform.position+moveTo, Quaternion.identity) as GameObject;
 			h.rigidbody.velocity = ((transform.position-moveTo)*hamForce);
