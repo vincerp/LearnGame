@@ -42,11 +42,18 @@ public class NodeFollower : MonoBehaviour {
 
 		transform.LookAt(cNode);
 		//start walking
+		if( animation != null)
+			animation.Play("Walk");
+
 		while(_tr.position != cNode.position){
 			_tr.position = Vector3.MoveTowards(_tr.position, cNode.position, speed);
 
 			yield return true;
 		}
+
+		if( animation != null)
+			animation.Stop();
+
 		//stop walking
 		if(cNode.name.Contains("_")) MoveToNext();
 	}
