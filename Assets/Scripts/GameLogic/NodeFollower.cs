@@ -13,6 +13,7 @@ public class NodeFollower : MonoBehaviour {
 	protected int currentNode = 0;
 
 	public float speed = 1f;
+	public bool isCircle = false;
 
 	private Transform _tr;
 
@@ -27,7 +28,12 @@ public class NodeFollower : MonoBehaviour {
 		if(nodeList.Count > currentNode){
 			StartCoroutine("Move");
 		} else {
-			Debug.LogError("Node number " + currentNode + " does not exist!");
+			if(isCircle){
+				currentNode = 0;
+				StartCoroutine("Move");
+			} else {
+				Debug.LogError("Node number " + currentNode + " does not exist!");
+			}
 		}
 	}
 
@@ -64,7 +70,12 @@ public class NodeFollower : MonoBehaviour {
 			if(nodeList[i] == null) break;
 			Gizmos.color = (nodeList[i].name.Contains("_"))?Color.yellow:Color.red;
 			Gizmos.DrawSphere(nodeList[i].position, 0.9f);
-			if(i==0) continue;
+			if(i==0){
+				if(isCircle){
+					Gizmos.DrawLine(nodeList[i].position, nodeList[nodeList.Count-1].position);
+					continue;
+				} else continue;
+			}
 			Gizmos.color = Color.yellow;
 			Gizmos.DrawLine(nodeList[i].position, nodeList[i-1].position);
 		}
