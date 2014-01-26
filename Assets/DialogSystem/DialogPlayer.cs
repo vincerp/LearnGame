@@ -14,14 +14,14 @@ public class DialogPlayer : MonoBehaviour {
 	public Dialog dialogToPlay = null;
 	int messageIndex = 0;
 
-	MeshRenderer[] renderers;
+	Transform cameraFocus = null;
 
 	void Awake()
 	{
 		mesh = GetComponentInChildren<TextMesh>();
 		Instance = this;
 
-		transform.parent.camera.enabled = false;
+		GameObject.FindWithTag("HUDCamera").camera.enabled = false;
 	}
 
 	void Update()
@@ -42,23 +42,39 @@ public class DialogPlayer : MonoBehaviour {
 					dialogToPlay = null;
 					messageIndex = 0;
 
-					transform.parent.camera.enabled = false;
+					GameObject.FindWithTag("HUDCamera").camera.enabled = false;
 
-					GameObject.FindWithTag("TourGuide").GetComponent<NodeFollower>().MoveToNext();
+					if( cameraFocus != null )
+						cameraFocus.SendMessage("OnFinishDialog", SendMessageOptions.DontRequireReceiver);
 				}
 
 			}
 		}
 	}
 
-	public void Play( Dialog dialog )
+	public void Play( Dialog dialog, Transform focus = null )
 	{
 		dialogToPlay = dialog;
-
-		transform.parent.camera.enabled = true;
+		cameraFocus = focus;
 
 		if( dialog.messages.Count > 0 )
 			ShowMessage( dialog.messages[messageIndex] );
+
+		Transform cameraPivot = null;
+		if( cameraFocus != null )
+		{
+			cameraPivot = focus.FindChild("CameraFocus");
+			cameraFocus.SendMessage("OnStartDialog", SendMessageOptions.DontRequireReceiver);
+		}
+
+		Transform dialogCam = GameObject.FindWithTag("HUDCamera").transform;
+		dialogCam.transform.parent = cameraPivot;	// may be null
+
+		dialogCam.localPosition = Vector3.zero;
+		dialogCam.localRotation = Quaternion.identity;
+		dialogCam.Rotate(dialogCam.up, 180f);
+
+		dialogCam.camera.enabled = true;
 	}
 
 	public void ShowMessage( Message message )
@@ -66,8 +82,7 @@ public class DialogPlayer : MonoBehaviour {
 		mesh.text = message.speaker + ": \n\n" + message.message;
 		messageIndex++;
 
-		// rooting to "Tour Guide" object
-		int random = Random.Range(1,3);
-		transform.parent.parent.parent.animation.Play("Talk" + random);
+		if( cameraFocus != null )
+			cameraFocus.SendMessage("OnShowMessage", SendMessageOptions.DontRequireReceiver);
 	}
 }
