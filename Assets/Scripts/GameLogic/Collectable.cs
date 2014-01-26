@@ -28,8 +28,7 @@ public class Collectable : MonoBehaviour {
 
 		GameObject p = Instantiate(particles) as GameObject;
 		p.transform.position = _tr.position;
-		gameObject.AddComponent<AudioSource>();
-		audio.PlayOneShot(sound);
+		AudioMono.instance.PlayOneShot(sound);
 		GameObject.Destroy(p, 2f);
 		Destroy(gameObject);
 	}

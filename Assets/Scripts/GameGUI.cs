@@ -3,10 +3,24 @@ using System.Collections;
 
 public class GameGUI : MonoBehaviour {
 
+	public static GameGUI instance;
+
 	public GUISkin skin;
 	public int totalEggs = 20;
 	public Rect eggsPos;
 	private Rect _eggsPos;
+	
+	public GameObject egg;
+	public GameObject ham;
+
+	void Start(){
+		instance = this;
+	}
+
+	public void ActivateHam(){
+		egg.SetActive(false);
+		ham.SetActive(true);
+	}
 
 	void OnGUI(){
 		if(skin)GUI.skin = skin;

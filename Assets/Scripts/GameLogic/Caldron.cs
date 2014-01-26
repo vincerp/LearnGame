@@ -6,12 +6,16 @@ public class Caldron : MonoBehaviour {
 	private float lastTimeEggPulled = 0f;
 	public float timeBetweenEggs = 1f;
 	public GameObject egg;
-	public float speed;
 
 	public Vector3 moveTo;
 
 	public int eggsPulled = 0;
-	public int eggsTotal = 20;
+	public int eggsTotal = 10;
+	
+	public GameObject smoke;
+	public GameObject ham;
+	public AudioClip hamSound;
+	public float hamForce = 200f;
 
 	void OnTriggerStay (Collider col) {
 		if(col.tag != "Player") return;
@@ -24,7 +28,13 @@ public class Caldron : MonoBehaviour {
 		eggsPulled++;
 		lastTimeEggPulled = Time.time;
 		if(eggsPulled>= eggsTotal){
-			//TODO: something!
+			Instantiate(smoke, transform.position+moveTo, Quaternion.identity);
+			AudioMono.instance.PlayOneShot(hamSound);
+
+			GameObject h = Instantiate(ham, transform.position+moveTo, Quaternion.identity) as GameObject;
+			h.rigidbody.velocity = ((transform.position-moveTo)*hamForce);
+
+			Destroy(gameObject);
 		}
 	}
 
