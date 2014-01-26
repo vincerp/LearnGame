@@ -9,15 +9,16 @@ public class AutoAnimate : MonoBehaviour {
 
 	private Transform _tr;
 
-	void Start () {
+	IEnumerator Start () {
 		animation.clip = clip;
 		animation.wrapMode = wrap;
 		animation.Play();
 
 		_tr = transform;
 
+		yield return new WaitForEndOfFrame();
 		NodeFollower nf = GetComponent<NodeFollower>();
-		if(nf){
+		if(nf != null){
 			nf.MoveToNext();
 		}
 	}
