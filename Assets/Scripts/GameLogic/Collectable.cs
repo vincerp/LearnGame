@@ -9,6 +9,8 @@ public class Collectable : MonoBehaviour {
 	public GameObject particles;
 	public Vector3 rotateSpeed;
 
+	public AudioClip sound;
+
 	private Transform _tr;
 
 	void Start(){
@@ -26,6 +28,8 @@ public class Collectable : MonoBehaviour {
 
 		GameObject p = Instantiate(particles) as GameObject;
 		p.transform.position = _tr.position;
+		gameObject.AddComponent<AudioSource>();
+		audio.PlayOneShot(sound);
 		GameObject.Destroy(p, 2f);
 		Destroy(gameObject);
 	}
