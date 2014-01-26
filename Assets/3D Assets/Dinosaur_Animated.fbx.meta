@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: f518c228885b2174f8c7da36613958d5
 ModelImporter:
-  serializedVersion: 16
+  serializedVersion: 15
   fileIDToRecycleName:
     100000: ControlBone
     100002: Dinosaur
@@ -96,7 +96,487 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 28
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dinosaur
+        weight: 1
+      - path: GameJam_Dynosaur_Rig
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Elbow_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Elbow_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Foot_IK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Foot_IK_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Hand_IK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Hand_IK_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Knee_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Knee_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/Head_Def
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/Head_Def/Head_Def_Top
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_Def_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_Def_L/LowerArm_Def_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_Def_L/LowerArm_Def_L/Hand_FK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_Def_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_Def_R/LowerArm_Def_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_Def_R/LowerArm_Def_R/Hand_FK_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_IK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_IK_L/LowerArm_IK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_IK_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_IK_R/LowerArm_IK_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_Def_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_Def_L/LowerLeg_Def_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_Def_L/LowerLeg_Def_L/Foot_Def_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_Def_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_Def_R/LowerLeg_Def_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_Def_R/LowerLeg_Def_R/Foot_Def_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_IK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_IK_L/LowerLeg_IK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_IK_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_IK_R/LowerLeg_IK_R
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Attack
+      takeName: Attack
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dinosaur
+        weight: 1
+      - path: GameJam_Dynosaur_Rig
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Elbow_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Elbow_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Foot_IK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Foot_IK_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Hand_IK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Hand_IK_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Knee_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Knee_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/Head_Def
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/Head_Def/Head_Def_Top
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_Def_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_Def_L/LowerArm_Def_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_Def_L/LowerArm_Def_L/Hand_FK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_Def_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_Def_R/LowerArm_Def_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_Def_R/LowerArm_Def_R/Hand_FK_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_IK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_IK_L/LowerArm_IK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_IK_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_IK_R/LowerArm_IK_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_Def_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_Def_L/LowerLeg_Def_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_Def_L/LowerLeg_Def_L/Foot_Def_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_Def_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_Def_R/LowerLeg_Def_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_Def_R/LowerLeg_Def_R/Foot_Def_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_IK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_IK_L/LowerLeg_IK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_IK_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_IK_R/LowerLeg_IK_R
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Dead
+      takeName: Dead
+      firstFrame: 0
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dinosaur
+        weight: 1
+      - path: GameJam_Dynosaur_Rig
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Elbow_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Elbow_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Foot_IK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Foot_IK_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Hand_IK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Hand_IK_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Knee_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Knee_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/Head_Def
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/Head_Def/Head_Def_Top
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_Def_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_Def_L/LowerArm_Def_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_Def_L/LowerArm_Def_L/Hand_FK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_Def_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_Def_R/LowerArm_Def_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_Def_R/LowerArm_Def_R/Hand_FK_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_IK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_IK_L/LowerArm_IK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_IK_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_IK_R/LowerArm_IK_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_Def_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_Def_L/LowerLeg_Def_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_Def_L/LowerLeg_Def_L/Foot_Def_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_Def_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_Def_R/LowerLeg_Def_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_Def_R/LowerLeg_Def_R/Foot_Def_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_IK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_IK_L/LowerLeg_IK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_IK_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_IK_R/LowerLeg_IK_R
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle
+      takeName: Idle
+      firstFrame: 0
+      lastFrame: 57
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dinosaur
+        weight: 1
+      - path: GameJam_Dynosaur_Rig
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Elbow_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Elbow_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Foot_IK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Foot_IK_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Hand_IK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Hand_IK_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Knee_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Knee_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/Head_Def
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/Head_Def/Head_Def_Top
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_Def_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_Def_L/LowerArm_Def_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_Def_L/LowerArm_Def_L/Hand_FK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_Def_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_Def_R/LowerArm_Def_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_Def_R/LowerArm_Def_R/Hand_FK_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_IK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_IK_L/LowerArm_IK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_IK_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_IK_R/LowerArm_IK_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_Def_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_Def_L/LowerLeg_Def_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_Def_L/LowerLeg_Def_L/Foot_Def_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_Def_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_Def_R/LowerLeg_Def_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_Def_R/LowerLeg_Def_R/Foot_Def_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_IK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_IK_L/LowerLeg_IK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_IK_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_IK_R/LowerLeg_IK_R
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Walk
+      takeName: Walk
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dinosaur
+        weight: 1
+      - path: GameJam_Dynosaur_Rig
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Elbow_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Elbow_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Foot_IK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Foot_IK_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Hand_IK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Hand_IK_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Knee_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Knee_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/Head_Def
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/Head_Def/Head_Def_Top
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_Def_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_Def_L/LowerArm_Def_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_Def_L/LowerArm_Def_L/Hand_FK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_Def_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_Def_R/LowerArm_Def_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_Def_R/LowerArm_Def_R/Hand_FK_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_IK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_IK_L/LowerArm_IK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_IK_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperArm_IK_R/LowerArm_IK_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_Def_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_Def_L/LowerLeg_Def_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_Def_L/LowerLeg_Def_L/Foot_Def_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_Def_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_Def_R/LowerLeg_Def_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_Def_R/LowerLeg_Def_R/Foot_Def_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_IK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_IK_L/LowerLeg_IK_L
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_IK_R
+        weight: 1
+      - path: GameJam_Dynosaur_Rig/ControlBone/Spine_Def/UpperLeg_IK_R/LowerLeg_IK_R
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -133,5 +613,4 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 1
-  additionalBone: 0
   userData: 

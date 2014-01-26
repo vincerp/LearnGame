@@ -17,6 +17,9 @@ public class NodeFollower : MonoBehaviour {
 
 	private Transform _tr;
 
+	[HideInInspector]
+	public bool isMoving = false;
+
 	private void Start(){
 		_tr = transform;
 
@@ -45,14 +48,16 @@ public class NodeFollower : MonoBehaviour {
 		if( animation != null)
 			animation.Play("Walk");
 
+		isMoving = true;
 		while(_tr.position != cNode.position){
 			_tr.position = Vector3.MoveTowards(_tr.position, cNode.position, speed);
 
 			yield return true;
 		}
+		isMoving = false;
 
 		if( animation != null)
-			animation.Stop();
+			animation.Play("Idle");
 
 		//stop walking
 		if(cNode.name.Contains("_")) MoveToNext();
