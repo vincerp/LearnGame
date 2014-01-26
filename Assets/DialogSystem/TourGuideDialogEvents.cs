@@ -17,6 +17,6 @@ public class TourGuideDialogEvents : MonoBehaviour
 
 	public void OnFinishDialog()
 	{
-		GetComponent<NodeFollower>().MoveToNext();
+		if(GetComponent<NodeFollower>())GetComponent<NodeFollower>().MoveToNext();
 	}
 }

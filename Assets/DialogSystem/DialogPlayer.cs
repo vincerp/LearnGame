@@ -30,7 +30,8 @@ public class DialogPlayer : MonoBehaviour {
 		{ 
 			Ray ray = transform.parent.camera.ScreenPointToRay( Input.mousePosition );
 
-			if( Physics.Raycast( ray, Mathf.Infinity, 1 << gameObject.layer ) )
+			//if( Physics.Raycast( ray, Mathf.Infinity, 1 << gameObject.layer ) )
+			if( Physics.Raycast( ray, Mathf.Infinity, 1 <<31 ) )
 			{
 				if( dialogToPlay == null )
 					return;
